@@ -1,0 +1,69 @@
+p {
+  color: green;
+}
+
+h1 {
+  color: green;
+}
+
+h2 {
+  color: green;
+  background-color: #25221f;
+}
+
+h3 {
+  color: green;
+}
+
+h4 {
+  color: green;
+}
+
+h1 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  padding: 5px;
+  font-weight: 500;
+  color: yellow;
+}
+
+h2 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  padding: 5px;
+  font-weight: 500;
+  color: blue;
+}
+
+h3 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  padding: 5px;
+  font-weight: 500;
+  color: #91535d;
+}
+
+.button, .super-button {
+  border: none;
+  color: blue;
+}
+
+div {
+  background-color: pink;
+}
+
+div ul {
+  list-style: none;
+}
+
+div ul li {
+  color: purple;
+  display: inline;
+  cursor: pointer;
+}
+
+div ul li:hover {
+  background-color: royalblue;
+}
+
+h1 {
+  float: right;
+}
+/*# sourceMappingURL=style.css.map */

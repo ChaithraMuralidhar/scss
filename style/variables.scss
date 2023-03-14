@@ -1,0 +1,24 @@
+
+@for $i from 1 through 100{
+    .p#{$i} {
+        padding: #{$i}px;
+    }
+
+    .pt-#{$i} {
+        padding-top: #{$i}px;
+    }
+
+    .mt-#{$i}{
+        margin-top: #{$i}px;
+    }
+}
+
+
+$menu-items: home about services contact help ;
+
+@each $item in $menu-items{
+    .#{$item}{
+        padding: 10px;
+        color: blue;
+    }
+}

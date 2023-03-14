@@ -1,0 +1,119 @@
+// p{
+//     color: red;
+// }
+// h1{
+//     color: red;
+// }
+// h2{
+//     color: red;
+// }
+// h3{
+//     color: red;
+// }
+// h4{
+//     color: red;
+// } this is used as css 
+
+
+
+
+
+
+
+
+
+
+// for scss we are going to use variable term that is 
+
+$maincolor:green;
+$bgcolor:rgb(37, 34, 31);
+
+
+p{
+    color: $maincolor;
+}
+h1{
+    color: $maincolor;
+}
+h2{
+    color: $maincolor;
+    background-color: $bgcolor;
+}
+h3{
+    color: $maincolor;
+}
+h4{
+    color: $maincolor;
+}
+
+
+
+
+
+
+
+
+// mixin
+
+@mixin headingstyle($color:rgb(145, 83, 93)) {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 5px;
+    font-weight: 500;
+    color: $color;
+}
+
+h1{
+    @include headingstyle(yellow);
+}
+
+h2{
+    @include headingstyle(blue)
+}
+h3{
+@include headingstyle();
+}
+
+
+
+
+
+
+// extend
+
+.button{
+    border: none;
+    color: blue;
+}
+
+.super-button{
+    @extend .button
+}
+
+
+
+
+div{
+    background-color: pink;
+    ul{
+        list-style: none;
+        li{ &:hover{
+            background-color: royalblue;
+        }
+            color: purple;
+            display: inline;
+            cursor: pointer;
+        }
+    }
+}
+
+$float :'right';
+@if $float == 'left'{
+   h1{
+    float: left;
+   }
+}
+@else {
+    h1{
+        float : right;
+}
+    }
